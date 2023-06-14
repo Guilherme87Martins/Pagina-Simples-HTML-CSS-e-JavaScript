@@ -1,0 +1,89 @@
+body {
+    font-family: monospace;
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+
+}
+
+.list {
+    list-style: square;
+
+}
+
+/*#msg {
+    font-family: monospace;
+}*/
+
+.light-theme {
+
+    --bg: var(--green);
+    --fontColor: var(--black);
+
+}
+
+:root {
+    --green: #4ab578;
+    --white: #ffffff;
+    --black: #000000;
+    /*da linha 30 até a 34 você tem as cores pré-defenidas para o fundo da pagina */
+}
+
+.dark-theme {
+
+    --bg: var(--black);
+    --fontColor: var(--green);
+
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+
+}
+
+.btn {
+    position: absolute;
+    top: 140px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    /*da linha 60 até a 69 você tem uma classe que define o tamanho, posicionamento do botão "Dark / Light"*/
+}
+
+.btn:focus { outline-style: none; }
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+/*da linha 75 até a 79 você tem um seletor com as caracteristicas do tema light-theme*/
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+    /*da linha 83 até 87 você tem um seletor com as caracteristicas do tema dark-theme*/
+}
